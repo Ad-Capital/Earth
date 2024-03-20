@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.body {
+  height: 2800px;
+  left: calc(50% - 1446px/2);
+  background: linear-gradient(180deg, #7D2AE7 0%, rgba(250, 249, 255, 0) 100%);
+
+}
+
+.nav:hover {
+  color: #7D2AE7;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #7D2AE7;
+  transition: width 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav:hover::after {
+  width: 100%;
+}
+
+.curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.curve svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 500px;
+}
+
+.curve .shape-fill {
+  fill: #F3F3F3;
+}
+
+@media (max-width: 414px) {
+  .curve svg {
+    height: 100px;
+
+    &.small-screen {
+      display: block;
+      /* Ensure visibility if needed */
+    }
+  }
+}
+
+.contactCurve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.contactCurve svg {
+  position: relative;
+  width: calc(100% + 1.3px);
+  height: 700px;
+}
+
+.contactCurve .shape-fill {
+  fill: #F3F3F3;
+}
+
+@media (max-width: 414px) {
+  .contactCurve svg {
+    height: 200px;
+
+    &.small-screen {
+      display: block;
+      /* Ensure visibility if needed */
+    }
+  }
+}
+
+.roadmapCurve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.roadmapCurve svg {
+  position: relative;
+  width: calc(100% + 1.3px);
+  height: 600px;
+}
+
+.roadmapCurve .shape-fill {
+  fill: #ffffff;
+}
+
+@media (max-width: 430px) {
+  .roadmapCurve svg {
+    height: 200px;
+
+    &.small-screen {
+      display: block;
+      /* Ensure visibility if needed */
+    }
+  }
+}
+
+
+.Gradient {
+  background: linear-gradient(360deg, #1E0734 0%, rgba(250, 249, 255, 0) 100%);
+}
+
+.marketplaceGradient {
+  background: linear-gradient(180deg, #1E0734 0%, rgba(30, 7, 52, 0) 100%);
+}
+
+.roadmapGradient {
+  background: linear-gradient(180deg, rgba(30, 7, 52, 0.4) 0%, #1E0734 100%);
+  height: 100vh;
+}
+
+.interactive-sections {
+  flex: 1;
+  display: flex;
+  padding-top: 50px;
+  width: 50%;
+}
+
+.interactive-section {
+  margin: 2px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.interactive-section.active {
+  padding: 10px;
+  color: #FAF9FF;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-left: 24px;
+  width: 326px;
+
+}
+
+.interactive-section.clicked {
+  background-color: #7D2AE7;
+
+}
+
+.interactive-section.clicked h2 {
+  margin-top: 0;
+}
+
+.interactive-section {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.interactive-section:hover {
+  transform: scale(1.05);
+}
+
+.interactive-section.active {
+  font-weight: bold;
+}
+
+.text-box {
+  width: 600px;
+  height: 416px;
+  padding: 67px, 44px, 67px, 44px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: #DFCAF9;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-background {
+  background-image: url('../public/background.svg');
+  /* Replace with your image path */
+  background-size: cover;
+  /* Adjust as needed (cover, contain, etc.) */
+  background-position: center;
+  /* Adjust as needed (center, top left, etc.) */
+  height: 100vh;
+  /* Set element height to viewport height */
+
+}

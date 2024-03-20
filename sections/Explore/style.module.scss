@@ -1,0 +1,144 @@
+.explore {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+@media (min-width: 640px) {
+    .explore {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+.exploreLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    height: 1989px;
+    width: 100%;
+    object-fit: contain;
+    background: linear-gradient(137.47deg, #AB54FD 0%, #260742 104.69%);
+    border-radius: 10px 10px 600px 600px;
+    display: inline-block;
+}
+
+.question {
+    width: 100%;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FAF9FF;
+    width: 370px;
+    height: 108px;
+    padding-top: 80px;
+    padding-left: 64px;
+}
+
+
+@media screen and (max-width: 430px) {
+    .title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 250px;
+        padding-top: 32px;
+        padding-left: 20px;
+    }
+}
+
+.title2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cards {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 430px) {
+    .cards {
+        padding-top: 20px;
+    }
+}
+
+.cardsdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.cardsrow1 {
+    display: flex;
+    flex-direction: row;
+    gap: 96px;
+    width: 30;
+    overscroll-behavior-x: contain;
+}
+
+@media screen and (max-width: 1024px) {
+    .cardsrow1 {
+        flex-direction: column;
+    }
+}
+
+.cardsrow2 {
+    display: flex;
+    flex-direction: row;
+    gap: 96px;
+}
+
+@media screen and (max-width: 1024px) {
+    .cardsrow2 {
+        flex-direction: column;
+    }
+}
+
+.imageContainer {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image {
+    object-fit: contain;
+    width: 500%;
+    transition: transform 0.3s ease;
+
+}@media (min-width: 1024px) {
+    .image {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .image {
+        width: 300px;
+    }
+}
+
+.image:hover {
+    transform: scale(0.9);
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}

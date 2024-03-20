@@ -1,0 +1,74 @@
+.YoutubeBackground {
+    background-image: url('./background/youtubeFrame.svg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 32px;
+    gap: 5px;
+}
+@media screen and (min-width: 1023px) {
+    .YoutubeBackground {
+        flex-direction: row;
+    }
+}
+
+
+.youtubeText {
+    width: 90%;
+    padding: 32px;
+}
+@media screen and (min-width: 1023px) {
+    .youtubeText {
+        width: 30%;
+        padding: 32px;
+    }
+}
+
+
+.subTitle {
+    font-size: 20px;
+    color: #1E0734;
+}
+
+.title {
+    margin-bottom: 16px;
+    color: #1E0734;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 36px;
+    }
+}
+
+.content {
+    margin-bottom: 16px;
+    color: #1E0734;
+    font-size: 14px;
+    padding-bottom: 40px;
+}
+
+.link {
+    text-decoration-line: underline;
+    color: #1E0734;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.embedVideo {
+    width: 100%;
+}
+
+@media screen and (min-width: 1023px) {
+    .embedVideo {
+        width: 700px;
+        height: 500px;
+    }
+}

@@ -1,0 +1,53 @@
+.marketPlace{
+    display: flex;
+    padding: 16px;
+    padding-top: 96px;
+    flex: 1 1 0%;
+    flex-direction: column;
+    gap: 32px;
+    justify-items: stretch;
+}
+@media (min-width: 768px) {
+    .marketPlace {
+        justify-content: space-between;
+        padding-top: 112px;
+        padding: 48px;
+        flex-direction: row;
+    }
+}
+
+.marketplacediv{
+    width: 90%;
+    padding: 32px;
+}
+@media (min-width: 768px) {
+    .marketplacediv{
+        width: 40%;
+    }
+}
+
+.headline{
+    color: #E1E1E1;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+    .headline {
+        font-size: 36px;
+    }
+}
+
+.content{
+    margin-bottom: 16px;
+    color: #E1E1E1;
+    font-size: 14px;
+    padding-bottom: 40px;
+}
+
+.link{
+    text-decoration-line: underline;
+    color: #1E0734;
+    font-weight: 700;
+    font-size: 16px;
+}

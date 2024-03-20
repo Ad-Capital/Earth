@@ -1,0 +1,77 @@
+.contact {
+    background: linear-gradient(180deg, #1E0734 0%, rgba(30, 7, 52, 0) 100%);
+    height: 1800px;
+    position: relative;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.contactdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+}
+
+@media (min-width: 640px) {
+    .contactdiv {
+        padding-top: 800px;
+    }
+}
+
+.headline {
+    font-size: 32px;
+    font-weight: 600;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1E0734;
+}
+
+@media (min-width: 1024px) {
+    .headline {
+        width: 70%;
+    }
+}
+
+.subheader {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1E0734;
+}
+
+.inputsdiv{
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+.inputs{
+    padding-right: 100px;
+    padding-left: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 9999px;
+}
+@media (min-width: 640px) {
+    .inputs {
+        padding-right: 150px;
+    }
+}
+@media (min-width: 1024px) {
+    .inputs {
+        width: 100%;
+    }
+}
+
+.flexStart{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

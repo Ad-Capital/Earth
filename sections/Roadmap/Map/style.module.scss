@@ -1,0 +1,293 @@
+.Roadmap {
+    position: relative;
+}
+
+@media (min-width: 912px) {
+    .Roadmap {
+        display: none;
+    }
+}
+
+.roadmapMobile {
+    padding-left: 4px;
+    padding-right: 4px;
+    height: auto;
+}
+
+.roadmapLayout {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    height: auto;
+    background: #F3F3F3;
+    border-radius: 600px 600px 10px 10px;
+}
+
+@media (min-width: 912px) {
+    .Mobile {
+        display: none;
+    }
+}
+
+.mobilediv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 128px;
+}
+
+.image {
+    padding: 16px;
+}
+
+.imageContainer {
+    padding: 16px;
+    padding-top: 50px;
+}
+
+.phasediv {
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #1E0734;
+}
+
+.phase {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.subtitle {
+    padding-bottom: 16px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.content {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.Map {
+    padding-left: 55px;
+    padding-right: 55px;
+    position: relative;
+    background: linear-gradient(180deg, #1E0734 0%, rgba(30, 7, 52, 0) 100%);
+    height: auto;
+}
+
+@media (max-width: 912px) {
+    .Map {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.mapLayout {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: #F3F3F3;
+    border-radius: 600px 600px 10px 10px;
+
+}
+
+@media (max-width: 912px) {
+    .mapLayout {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (max-width: 912px) {
+    .mapLayout {
+        display: none;
+    }
+}
+
+.mapdiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+    padding-top: 360px;
+    padding-bottom: 130px;
+}
+
+.mapsubdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 96px;
+    padding-left: 80px;
+}
+
+.mapsubdiv2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 96px;
+    padding-left: 150px;
+}
+
+.mapCard {
+    width: auto;
+    top: 3863px;
+    left: 784px;
+    gap: 25px;
+    color: #1E0734;
+}
+
+.mapPhase {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0em;
+    font-weight: bold;
+    color: #1E0734;
+}
+
+.mapPhase2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0em;
+    font-weight: bold;
+    color: #1E0734;
+    padding-top: 180px;
+}
+
+.mapPhase3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0em;
+    font-weight: bold;
+    color: #1E0734;
+    padding-top: 355px;
+}
+
+.mapPhase4 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0em;
+    font-weight: bold;
+    color: #1E0734;
+    padding-top: 340px;
+}
+
+.mapPhase5 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0em;
+    font-weight: bold;
+    color: #1E0734;
+    padding-top: 364px;
+}
+
+.mapTitle {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: 0em;
+    color: #1E0734;
+    padding-top: 20px;
+}
+
+.mapSubtitle {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    font-weight: bold;
+    color: #1E0734;
+    padding-bottom: 20px;
+}
+
+.mapContent {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+    height: auto;
+    color: #1E0734;
+    width: 80%;
+}
+
+.mapContent2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+    height: auto;
+    color: #1E0734;
+    width: 100%;
+}
+
+.mapImage {
+    width: 450px;
+}
+
+.mapImage2 {
+    width: 450px;
+    padding-top: 250px;
+}
+
+.mapImage3 {
+    width: 450px;
+    padding-top: 200px;
+}
+
+.mapImage4 {
+    width: 450px;
+    padding-top: 250px;
+}
+
+.mapImage5 {
+    width: 450px;
+    padding-top: 200px;
+}
+
+.line {
+    position: absolute;
+    height: 4380px;
+}
+
+.blackbutton {
+    padding-top: 48px;
+    padding-right: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+@media (max-width: 912px) {
+    .blackbutton {
+        display: none;
+    }
+}
+
+.blackbuttonMobile {
+    padding-top: 80px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.button{
+    width: 60px;
+}
