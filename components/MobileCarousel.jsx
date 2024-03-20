@@ -2,19 +2,19 @@
 
 import React, { createContext } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Scrollbar, Navigation } from 'swiper';
+import SwiperCore from 'swiper';
 import styles from "@/sections/Values/style.module.scss";
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 import 'swiper/css/navigation';
 
-SwiperCore.use([Scrollbar, Navigation]);
+SwiperCore.use();
 
 const MobileCarousel = () => {
   return (
     <div className={styles.Swiper}>
       <Swiper
-        className='bg-white p-4 flex gap-2'
+        className='bg-transparent p-4 flex gap-2'
         spaceBetween={20}
         slidesPerView={3}
         breakpoints={{

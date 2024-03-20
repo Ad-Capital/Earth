@@ -129,7 +129,7 @@
 .mapsubdiv {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     padding-top: 96px;
     padding-left: 80px;
 }
@@ -137,7 +137,7 @@
 .mapsubdiv2 {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     padding-top: 96px;
     padding-left: 150px;
 }
