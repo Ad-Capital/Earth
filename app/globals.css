@@ -210,3 +210,14 @@
   /* Set element height to viewport height */
 
 }
+
+@media (max-width: 1024px) {
+  .desktopLayout {
+      display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .mobileLayout {
+      display: none;
+  }
+}

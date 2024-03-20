@@ -24,7 +24,7 @@ const Navbar = () => (
           </Link>
         </span>
         <span className="font-bold nav">
-          <Link href="/roadMap">
+          <Link href="/roadmap">
               <p>Roadmap</p>
           </Link>
         </span>
@@ -39,7 +39,7 @@ const Navbar = () => (
           </Link>
         </span>
         <span className="font-bold nav">
-          <Link href="/About">
+          <Link href="/store">
               <p>Store</p>
           </Link>
         </span>

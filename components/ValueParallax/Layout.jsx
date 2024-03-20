@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import TextBox from "./TextBox"; // Import your TextBox component
+import MobileLayout from "./MobileLayout";
 
 const items = [
   "Community",
@@ -69,17 +70,24 @@ const DrumComponent = () => {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "row" }}>
-      <div
-        className="relative flex flex-col items-center pt-[150px]"
-        style={{ width: "500px" }} // Set width for DrumComponent
-      >
-        <AnimatePresence>{generateItems()}</AnimatePresence>
+    <section>
+      <div className="desktopLayout">
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <div
+            className="relative flex flex-col items-center pt-[150px]"
+            style={{ width: "500px" }} // Set width for DrumComponent
+          >
+            <AnimatePresence>{generateItems()}</AnimatePresence>
+          </div>
+          <div> {/* This div takes remaining space */}
+            <TextBox activeSection={activeSection} />
+          </div>
+        </div>
       </div>
-      <div> {/* This div takes remaining space */}
-        <TextBox activeSection={activeSection} />
-      </div>
-    </div>
+      <div className="mobileLayout"><MobileLayout /></div>
+      
+    </section>
+
   );
 };
 

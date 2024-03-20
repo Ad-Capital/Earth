@@ -17,13 +17,20 @@ const Contact = () => {
         </div>
         <div className='pt-24 sm:w-[640px]'>
           <h1 className={styles.headline}>Did Someone say fun mail?</h1>
-          <p className={styles.subheader}>Sign up now to receive exclusive updates, artist features, <br/>exciting events, and special offers straight to your inbox.</p>
+          <p className={styles.subheader}>Sign up now to receive exclusive updates, artist features, <br />exciting events, and special offers straight to your inbox.</p>
           <div className={styles.flexStart}>
             <div className={styles.inputsdiv}>
-              <input type='text' required placeholder='First name' className={styles.inputs} />
+              <label>
+                First Name:
+                <input type='text' id='firstName' name='firstName' required placeholder='First name' className={styles.inputs} />
+              </label>
             </div>
             <div className={styles.inputsdiv}>
-              <input type='email' required placeholder='Email' className={styles.inputs} />
+              <label>
+                Email:
+                <input type='text' id='email' name='email' required placeholder='Email' className={styles.inputs} />
+              </label>
+
             </div>
             <div>
               <Link href="">
