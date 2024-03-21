@@ -5,6 +5,11 @@
     padding-left: 24px;
     padding-right: 24px;
 }
+@media (max-width: 1024px) {
+    .contact {
+        height: auto;
+    }
+}
 
 .contactdiv {
     display: flex;

@@ -15,10 +15,16 @@
     width: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 431px) {
     .valuesLayout {
         padding-left: 4px;
         padding-right: 4px;
+        padding-top: 150px;
+    }
+}
+@media (max-width: 769px) {
+    .valuesLayout {
+        padding-top: 150px;
     }
 }
 
@@ -31,6 +37,11 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+}
+@media (max-width: 1024px) {
+    .valuesText {
+        margin-top: 10px;
+    }
 }
 
 .weValue {
@@ -48,6 +59,9 @@
         line-height: 36px;
         letter-spacing: 0em;
         text-align: left;
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -67,7 +81,7 @@
 }
 
 .Swiper {
-    padding: 16px;
+    padding: 6px;
     margin-left: auto;
     margin-right: auto;
     display: flex;

@@ -59,7 +59,8 @@ const FAQ = () => {
                     onClick={() => revealAnswer(index)}>{trivia.question}
                   </button>
                 </h3>
-                <span>
+                <span
+                onClick={() => revealAnswer(index)}>
                   {toggleBtn(index)}
                 </span>
               </div>

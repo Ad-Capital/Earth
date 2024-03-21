@@ -5,12 +5,19 @@ const Hero = () => (
         <div className="bg-[#F3F3F3]"
         >
             <div className={styles.headLine}>
-                <img src="headline.svg" alt="headline" />
+                <div className={styles.header}>
+                    <h1 className={styles.header1}>Join and Discover</h1>
+                    <h1 className={styles.header2}>Art You Love</h1>
+                </div>
                 <div className={styles.subTitle}>
-                    <img src="subTitle.svg" alt="" />
+                    <p className={styles.heroSubheader}>
+                        Are you an artist looking to showcase your talent to the right audience 
+                        or perhaps you’re a buyer searching for that perfect piece of art? Scroll 
+                        down to learn more
+                    </p>
                 </div>
             </div>
-            
+
         </div>
     </section>
 

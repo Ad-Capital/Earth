@@ -21,13 +21,11 @@ const Contact = () => {
           <div className={styles.flexStart}>
             <div className={styles.inputsdiv}>
               <label>
-                First Name:
                 <input type='text' id='firstName' name='firstName' required placeholder='First name' className={styles.inputs} />
               </label>
             </div>
             <div className={styles.inputsdiv}>
               <label>
-                Email:
                 <input type='text' id='email' name='email' required placeholder='Email' className={styles.inputs} />
               </label>
 

@@ -1,11 +1,13 @@
 .marketPlace{
     display: flex;
-    padding: 16px;
-    padding-top: 96px;
+    padding: 2px;
+    padding-top: 10px;
     flex: 1 1 0%;
     flex-direction: column;
     gap: 32px;
     justify-items: stretch;
+    justify-content: center;
+    align-items: center;
 }
 @media (min-width: 768px) {
     .marketPlace {
@@ -18,11 +20,13 @@
 
 .marketplacediv{
     width: 90%;
-    padding: 32px;
+    padding: 2px;
+    padding-top: 10px;
 }
 @media (min-width: 768px) {
     .marketplacediv{
         width: 40%;
+        padding: 32px;
     }
 }
 

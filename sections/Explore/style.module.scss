@@ -26,6 +26,12 @@
     display: inline-block;
 }
 
+@media (max-width: 1024px) {
+    .exploreLayout {
+        height: auto;
+    }
+}
+
 .question {
     width: 100%;
 }
@@ -68,6 +74,7 @@
     justify-content: center;
     align-items: center;
 }
+
 @media screen and (max-width: 430px) {
     .cards {
         padding-top: 20px;
@@ -120,7 +127,9 @@
     width: 500%;
     transition: transform 0.3s ease;
 
-}@media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
     .image {
         width: 500px;
     }
@@ -141,4 +150,10 @@
     justify-content: center;
     align-items: center;
     padding-top: 150px;
+    padding-bottom: 100px;
+}
+@media (max-width: 431px) {
+    .link {
+        padding-top: 50px;
+    }
 }

@@ -2,26 +2,31 @@
     background-image: url('./background/youtubeFrame.svg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 32px;
     gap: 5px;
+    height: auto;
 }
+
 @media screen and (min-width: 1023px) {
     .YoutubeBackground {
         flex-direction: row;
+        padding: 32px;
+        height: 100vh;
+
     }
 }
 
 
 .youtubeText {
     width: 90%;
-    padding: 32px;
+    padding: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
 @media screen and (min-width: 1023px) {
     .youtubeText {
         width: 30%;
@@ -63,12 +68,15 @@
 }
 
 .embedVideo {
-    width: 100%;
+    width: 355px;
+    height: 200px;
+    padding-top: 10px;
 }
 
 @media screen and (min-width: 1023px) {
     .embedVideo {
         width: 700px;
         height: 500px;
+        padding-left: 30px;
     }
 }
