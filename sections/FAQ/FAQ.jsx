@@ -26,15 +26,15 @@ const FAQ = () => {
   const screenReaderInstructions = (trivia, index) => {
 
     if (index === TriviaQuestion.length - 2 && index === isClicked) {
-      return trivia.answer + "... Press tab to hear the final question.";
+      return trivia.answer + "";
     }
 
     else if (index === isClicked) {
-      return trivia.answer + "... Press tab to hear the next question."
+      return trivia.answer + ""
     }
 
     else {
-      return trivia.question + "... Press enter to reveal the answer."
+      return trivia.question + ""
     }
   }
 

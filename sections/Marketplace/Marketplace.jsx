@@ -8,6 +8,7 @@ const Marketplace = () => {
     <div id="market" className='marketplaceGradient'>
       <div className={styles.marketPlace}>
         <div className={styles.marketplacediv}>
+          <h2 className={styles.headText}>COMING SOON</h2>
           <h2 className={styles.headline}>Buy and sell authentic art works</h2>
           <p className={styles.content}>We are building a place where your art can thrive while cashing out on your talent and artistic skills. A place where buyers can find art they desire and can trust.</p>
 
@@ -21,7 +22,7 @@ const Marketplace = () => {
           </div>
         </div>
 
-        <div className='md:mt-12  ml-[20%] lg:ml-0 md:ml-0 justify-items-end w-fit'>
+        <div className={styles.image}>
           <img src="/phones.svg" alt="phones" className='' />
         </div>
       </div>

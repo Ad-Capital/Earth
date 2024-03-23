@@ -17,8 +17,8 @@
 
 @media (max-width: 431px) {
     .valuesLayout {
-        padding-left: 4px;
-        padding-right: 4px;
+        padding-left: 12px;
+        padding-right: 12px;
         padding-top: 150px;
     }
 }
@@ -87,4 +87,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.swipperwrap{
+    height: 458px;
+    width: 372px;
+
+    background-color: transparent;
+    padding: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.image{
+    height: 458px;
+    width: 372px;
 }

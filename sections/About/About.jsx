@@ -8,30 +8,27 @@ const About = () => (
     <section className={styles.About} id="about">
         <div className={styles.aboutLayout}>
             <img src="aboutHeading.svg" alt="" className={styles.aboutHeading} />
-                <div className={styles.aboutText}>
-                    <p>EARTH is the World of Art that Loves, Shares and Expresses Art
-                        in its Authenticity. You probably got that much from the
-                        heading, but let’s paint a picture together shall we? </p><br />
-                    <p>Imagine a world where art can be expressed and experienced
-                        without limitations, where everyone is given the opportunity to
-                        enjoy everything art has to offer and more and an ecosystem
-                        where creatives and art lovers can peacefully coexist. Yes!
-                        That world. That world is EARTH. </p><br />
-                    <p>We believe the Art World is a place for EVERYONE. That’s why
-                        we use technology to create a safe and stress-free
-                        environment for the artist to sell his work commission free and
-                        for buyers to find art pieces that would bring smiles to their
-                        faces, warmth to their hearts and stories to their children. </p><br />
-                    <p>And artists who feel like they aren’t seen? We help them find
-                        their place in the limelight, making sure that they find the
-                        right audience…or the right audience finds them, putting them
-                        in a space where their art can speak freely and be heard. Any
-                        artist can become seen by the world because we put the
-                        spotlight on you. </p><br />
-                    <p>So take this giant leap for Art kind by clicking the button
-                        below to join our discord community and find your place on
-                        EARTH.</p>
-                </div>
+            <div className={styles.aboutText}>
+                <p>Here at Earth, we believe in the power of art to move, to
+                    inspire, and to connect. We're on a mission to break down
+                    barriers and make art more accessible to all. Whether you're a
+                    seasoned collector or a budding artist, you'll find a place to
+                    belong in our diverse and dynamic community.</p><br />
+                <p>Our curated collections showcase the best and brightest
+                    talents from around the globe, spanning every style, medium,
+                    and genre imaginable. From bold brushstrokes to intricate
+                    sculptures, there's something here to capture every heart and
+                    imagination.</p><br />
+                <p>But Earth is more than just a platform—it's a movement. It's a 
+                    rallying cry for all those who believe in the transformative 
+                    power of art. It's a celebration of creativity, diversity, and 
+                    the human spirit. And it's a promise to support and uplift artists at 
+                    every stage of their journey.</p><br />
+                <p>So join us on Earth and be part of something extraordinary. 
+                    Whether you're here to discover, to create, or simply to be 
+                    inspired, you'll find a warm welcome and a world of possibility 
+                    waiting for you.</p><br />
+            </div>
             <MobileAbout />
             <Link href="" className={styles.button}>
                 <Rounded>

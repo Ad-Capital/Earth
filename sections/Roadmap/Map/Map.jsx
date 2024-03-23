@@ -6,6 +6,17 @@ import { RoadmapMobile } from '@/sections'
 import styles from "./style.module.scss"
 import Link from 'next/link';
 
+const smoothScroll = (href) => (e) => {
+  e.preventDefault(); 
+  const destination = document.querySelector(href);
+  if (destination) {
+    window.scrollTo({
+      top: destination.offsetTop,
+      behavior: 'smooth', 
+    });
+  }
+};
+
 const Roadmap = () => {
   return (
     <section id="Roadmap" className={styles.Map}>
@@ -187,8 +198,8 @@ const Roadmap = () => {
           </div>
         </div>
       </motion.div>
-      <Link href="#Roadmap" className={styles.blackbutton}>
-        <img src="blackButton.svg" alt="" />
+      <Link href="#Roadmap" onClick={smoothScroll('#Roadmap')} className={styles.blackbuttonMobile}>
+        <img src="blackButton.svg" alt="" className={styles.button} />
       </Link>
       <RoadmapMobile />
 

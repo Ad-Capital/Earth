@@ -34,7 +34,7 @@ export default function index({children, backgroundColor="#455CE9", ...attribute
           {
             children
           }
-        <div ref={circle} style={{backgroundColor}} className={styles.circle}></div>
+        <div ref={circle} style={{backgroundColor : '#9D5FED'}} className={styles.circle}></div>
       </div>
     
   )

@@ -5,6 +5,17 @@ import { fadeIn, staggerContainer } from "@/utils/motion"
 import styles from "./style.module.scss"
 import Link from 'next/link';
 
+const smoothScroll = (href) => (e) => {
+    e.preventDefault();
+    const destination = document.querySelector(href);
+    if (destination) {
+        window.scrollTo({
+            top: destination.offsetTop,
+            behavior: 'smooth',
+        });
+    }
+};
+
 const Roadmap = () => {
     return (
         <section className={styles.Roadmap}>
@@ -22,7 +33,7 @@ const Roadmap = () => {
                             whileInView="show"
                             viewport={{ once: true, amount: 0.25 }}
                             className={styles.image}>
-                            <img src="pic1.svg" alt=""/>
+                            <img src="pic1.svg" alt="" />
                         </motion.div>
                         <motion.div
                             variants={fadeIn('up', 'tween', 0.5, 1)}
@@ -183,8 +194,8 @@ const Roadmap = () => {
                             </span>
                         </motion.div>
                     </div>
-                    <Link href="#Roadmap"className={styles.blackbuttonMobile}>
-                        <img src="blackButton.svg" alt="" className={styles.button}/>
+                    <Link href="#Roadmap" onClick={smoothScroll('#Roadmap')} className={styles.blackbuttonMobile}>
+                        <img src="blackButton.svg" alt="" className={styles.button} />
                     </Link>
                 </div>
             </motion.div>

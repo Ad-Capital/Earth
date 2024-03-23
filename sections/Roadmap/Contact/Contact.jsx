@@ -16,8 +16,8 @@ const RoadmapContact = () => {
           </svg>
         </div>
         <div className='pt-24 sm:w-[640px]'>
-          <h1 className={styles.headline}>Did Someone say fun mail?</h1>
-          <p className={styles.subheader}>Sign up now to receive exclusive updates, artist features, <br/>exciting events, and special offers straight to your inbox.</p>
+          <h1 className={styles.headline}>Subscribe to Earth’s newsletter</h1>
+          <p className={styles.subheader}>Stay connected with the latest updates, exclusive offers, and artistic inspiration from Earth. Subscribe to our newsletter today and join our vibrant community of art enthusiasts, collectors, and creators.</p>
           <div className={styles.flexStart}>
             <div className={styles.inputsdiv}>
               <input type='text' required placeholder='First name' className={styles.inputs} />

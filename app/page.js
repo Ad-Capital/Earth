@@ -1,16 +1,33 @@
-import { Cards, Navbar } from "@/components";
+"use client";
+
+import { AnimatePresence } from 'framer-motion';
+import React, { createContext, useState, useEffect } from 'react';
+import { Cards, Navbar, Preloader } from "@/components";
 import { Hero, YoutubeVideo, About, Explore, Values, Marketplace, FAQ } from "@/sections";
 import Contact from "@/sections/Contact/Contact";
-import { Poppins } from "next/font/google";
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700'],
-})
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect( () => {
+    (
+      async () => {
+          const LocomotiveScroll = (await import('locomotive-scroll')).default
+          const locomotiveScroll = new LocomotiveScroll();
+
+          setTimeout( () => {
+            setIsLoading(false);
+            document.body.style.cursor = 'default'
+            window.scrollTo(0,0);
+          }, 2000)
+      }
+    )()
+  }, [])
   return (
-    <main className={`${poppins.className}flex min-h-screen flex-col body`}>
+    <main className="flex min-h-screen flex-col body">
+      <AnimatePresence mode='wait'>
+        {isLoading && <Preloader />}
+      </AnimatePresence>
       <Navbar />
       <Hero />
       <Cards />

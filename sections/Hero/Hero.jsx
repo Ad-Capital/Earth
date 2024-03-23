@@ -11,9 +11,9 @@ const Hero = () => (
                 </div>
                 <div className={styles.subTitle}>
                     <p className={styles.heroSubheader}>
-                        Are you an artist looking to showcase your talent to the right audience 
-                        or perhaps you’re a buyer searching for that perfect piece of art? Scroll 
-                        down to learn more
+                        Connect with fellow art enthusiasts and discover unique creations from 
+                        talented artists. Earth bridges the gap between creators and collectors, 
+                        fostering a dynamic community. Explore and be inspired!
                     </p>
                 </div>
             </div>

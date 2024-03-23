@@ -5,7 +5,7 @@ const Footer = () => {
     <section className="flex justify-center items-center">
       <div className="flex flex-col md:flex-row sm:mx-auto text-[14px] text-primary mt-11 sm:w-[640px]">
         <div className="md:mr-8 mb-8 pr-2">
-          <img src="logo.svg" alt="logo" />
+          <img src="roadMapLogo.svg" alt="logo" />
         </div>
 
         <div className="flex flex-col md:flex-row flex-wrap md:gap-[4rem] flex-1">

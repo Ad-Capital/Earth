@@ -21,7 +21,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="lg:hidden flex justify-end items-center">
-          <div className='rounded-full buttonGradient h-[60px] w-[60px] flex justify-center items-center'>
+          <div className='h-[60px] w-[60px] flex justify-center items-center'>
             <button
               className="block lg:hidden"
               onClick={toggleMobileMenu}
@@ -47,7 +47,7 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className="flex justify-end w-full pt-8 pr-4">
-                <div className='rounded-full buttonGradient h-[60px] w-[60px] flex justify-center items-center'>
+                <div className=' h-[60px] w-[60px] flex justify-center items-center'>
                   <button
                     className="block lg:hidden"
                     onClick={toggleMobileMenu}
@@ -55,7 +55,7 @@ const Navbar = () => {
                     {isMobileMenuOpen ? (
                       <IoMdClose className="h-6 w-6 text-white" />
                     ) : (
-                      <IoMdMenu className="h-6 w-6 text-white" />
+                      <IoMdMenu className="h-6 w-6 text-black" />
                     )}
                   </button>
                 </div>
@@ -63,19 +63,19 @@ const Navbar = () => {
             </div>
 
             <div className="flex flex-col gap-4 pt-[50px] text-white">
-              <MobileNavItem href="#about" onClick={toggleMobileMenu}>
+              <MobileNavItem href="/#about" onClick={toggleMobileMenu}>
                 About
               </MobileNavItem>
               <MobileNavItem href="/roadmap" onClick={toggleMobileMenu}>
                 Roadmap
               </MobileNavItem>
-              <MobileNavItem href="#FAQ" onClick={toggleMobileMenu}>
+              <MobileNavItem href="/#FAQ" onClick={toggleMobileMenu}>
                 FAQs
               </MobileNavItem>
-              <MobileNavItem href="#market" onClick={toggleMobileMenu}>
+              <MobileNavItem href="/#market" onClick={toggleMobileMenu}>
                 Marketplace (Coming soon)
               </MobileNavItem>
-              <MobileNavItem href="/About" onClick={toggleMobileMenu}>
+              <MobileNavItem href="/" onClick={toggleMobileMenu}>
                 Go to Store
               </MobileNavItem>
               <div className='p-4'><Rounded><p className='font-bold'>Join the discord community</p></Rounded></div>
@@ -84,11 +84,11 @@ const Navbar = () => {
         </div>
         {/* Desktop navigation */}
         <div className="hidden lg:flex text-white gap-8">
-          <NavLink href="#about">About</NavLink>
+          <NavLink href="/#about">About</NavLink>
           <NavLink href="/roadmap">Roadmap</NavLink>
-          <NavLink href="#FAQ">FAQs</NavLink>
-          <NavLink href="#market">Marketplace</NavLink>
-          <NavLink href="/About">Store</NavLink>
+          <NavLink href="/#FAQ">FAQs</NavLink>
+          <NavLink href="/#market">Marketplace</NavLink>
+          <NavLink href="/">Store</NavLink>
         </div>
         <div className="hidden lg:flex">
           <Rounded><p className='text-white font-bold'>Join Community</p></Rounded>

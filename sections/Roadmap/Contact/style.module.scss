@@ -36,9 +36,9 @@
     color: #1E0734;
 }
 
-@media (min-width: 1024px) {
+@media screen and (max-width: 431px) {
     .headline {
-        width: 70%;
+        padding-top: 45px;
     }
 }
 

@@ -3,7 +3,20 @@
 import { IoMdMenu, IoMdClose } from 'react-icons/io';
 import Rounded from "@/constants/RoundedButtons"
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
+
+const smoothScroll = (href) => (e) => {
+  e.preventDefault();
+  const sectionId = href.replace(/^#/, '');
+  const section = document.getElementById(sectionId);
+  if (section) {
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth',
+    });
+  }
+};
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,7 +34,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="lg:hidden flex justify-end items-center">
-          <div className='rounded-full buttonGradient h-[60px] w-[60px] flex justify-center items-center'>
+          <div className='h-[60px] w-[60px] flex justify-center items-center'>
             <button
               className="block lg:hidden"
               onClick={toggleMobileMenu}
@@ -29,7 +42,7 @@ const Navbar = () => {
               {isMobileMenuOpen ? (
                 <IoMdClose className="h-6 w-6 text-white" />
               ) : (
-                <IoMdMenu className="h-6 w-6 text-white" />
+                <IoMdMenu className="h-6 w-6 text-black" />
               )}
             </button>
           </div>
@@ -47,7 +60,7 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className="flex justify-end w-full pt-8 pr-4">
-                <div className='rounded-full buttonGradient h-[60px] w-[60px] flex justify-center items-center'>
+                <div className='h-[60px] w-[60px] flex justify-center items-center'>
                   <button
                     className="block lg:hidden"
                     onClick={toggleMobileMenu}
@@ -66,18 +79,18 @@ const Navbar = () => {
               <MobileNavItem href="#about" onClick={toggleMobileMenu}>
                 About
               </MobileNavItem>
-              <MobileNavItem href="/roadmap" onClick={toggleMobileMenu}>
+              <Link href="/roadmap" className="block pb-5 pl-10 border-b border-gray-300 font-bold w-full nav" onClick={toggleMobileMenu}>
                 Roadmap
-              </MobileNavItem>
+              </Link>
               <MobileNavItem href="#FAQ" onClick={toggleMobileMenu}>
                 FAQs
               </MobileNavItem>
               <MobileNavItem href="#market" onClick={toggleMobileMenu}>
                 Marketplace (Coming soon)
               </MobileNavItem>
-              <MobileNavItem href="/About" onClick={toggleMobileMenu}>
+              <Link href="/About" className="block pb-5 pl-10 border-b border-gray-300 font-bold w-full nav" onClick={toggleMobileMenu}>
                 Go to Store
-              </MobileNavItem>
+              </Link>
               <div className='p-4'><Rounded><p className='font-bold'>Join the discord community</p></Rounded></div>
             </div>
           </div>
@@ -85,10 +98,10 @@ const Navbar = () => {
         {/* Desktop navigation */}
         <div className="hidden lg:flex gap-8">
           <NavLink href="#about">About</NavLink>
-          <NavLink href="/roadmap">Roadmap</NavLink>
+          <Link href="/roadmap" className="font-bold nav">Roadmap</Link>
           <NavLink href="#FAQ">FAQs</NavLink>
           <NavLink href="#market">Marketplace</NavLink>
-          <NavLink href="/About">Store</NavLink>
+          <Link href="/" className="font-bold nav">Store</Link>
         </div>
         <div className="hidden lg:flex">
           <Rounded><p className='text-white font-bold'>Join Community</p></Rounded>
@@ -99,17 +112,15 @@ const Navbar = () => {
 };
 
 const MobileNavItem = ({ href, children, onClick }) => (
-  <Link href={href}>
-    <div className="block pb-5 pl-10 border-b border-gray-300 font-bold w-full nav" onClick={onClick}>
-      {children}
-    </div>
-  </Link>
+  <a href={href} className="block pb-5 pl-10 border-b border-gray-300 font-bold w-full nav" onClick={(e) => {smoothScroll(href)(e); if(onClick) onClick();}}>
+    {children}
+  </a>
 );
 
 const NavLink = ({ href, children }) => (
-  <Link href={href}>
-    <div className="font-bold nav">{children}</div>
-  </Link>
+  <a href={href} className="font-bold nav" onClick={smoothScroll(href)}>
+    {children}
+  </a>
 );
 
 export default Navbar;

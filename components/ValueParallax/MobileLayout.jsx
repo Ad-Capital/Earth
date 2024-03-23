@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import TextBox from './TextBox';
 
 const MobileLayout = () => {
     const TextBox = ({ title, content }) => {
@@ -53,7 +52,7 @@ const MobileLayout = () => {
         <button onClick={handlePrev} className="border-[2px] rounded-full px-4 py-4 mr-4">
           <FaArrowLeft />
         </button>
-        <h4 className="text-[#ffffff] bg-[#7D2AE7] rounded-full text-3xl md:text-4xl px-6 py-4">{activeSection}</h4>
+        <h4 className="text-[#ffffff] font-serif bg-[#7D2AE7] rounded-full text-3xl md:text-4xl px-6 py-4">{activeSection}</h4>
         <button onClick={handleNext} className="border-[2px] rounded-full px-4 py-4 ml-4">
           <FaArrowRight />
         </button>

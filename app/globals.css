@@ -17,6 +17,7 @@
 }
 
 
+
 .nav {
   position: relative;
   display: inline-block;
@@ -86,7 +87,7 @@
 
 @media (max-width: 430px) {
   .curve svg {
-    height: 100px;
+    height: 150px;
 
     &.small-screen {
       display: block;
@@ -122,7 +123,7 @@
     }
   }
 }
-@media (max-width: 769px) {
+@media (min-width: 767px) {
   .contactCurve svg {
     height: 450px;
 
@@ -265,18 +266,21 @@
 
 .image-background {
   background-image: url('../public/background.svg');
-  background-size: cover;
-  background-position: center;
+  background-size: 150vh ; /* Adjust the size */
+  background-position: center; /* Align the top of the image with the top of the container */
   height: 100vh;
-
 }
-
+@media (min-width: 1024px) {
+  .image-background {
+      background-size: auto;
+  }
+}
 @media (max-width: 1024px) {
   .desktopLayout {
       display: none;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .mobileLayout {
       display: none;
   }
