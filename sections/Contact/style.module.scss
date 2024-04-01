@@ -73,6 +73,11 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 280px) {
+    .inputs {
+        width: 90%;
+    }
+}
 
 .flexStart{
     display: flex;

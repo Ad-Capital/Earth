@@ -47,7 +47,7 @@ const DrumComponent = () => {
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
           style={{
             position: "absolute",
-            height: "102px",
+            height: "90px",
             width: "346px",
             display: "flex",
             justifyContent: "center",

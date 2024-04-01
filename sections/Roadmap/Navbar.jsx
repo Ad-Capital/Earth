@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="py-8 sm:px-14 px-4 relative bg-transparent">
+    <nav className="py-8 sm:px-14 px-6 relative bg-transparent">
       <div className={`mx-auto flex justify-between items-center gap-8`}>
         <div className="w-[180px] h-[50px]">
           <Link href="/">
@@ -21,7 +21,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="lg:hidden flex justify-end items-center">
-          <div className='h-[60px] w-[60px] flex justify-center items-center'>
+          <div className='flex justify-center items-center'>
             <button
               className="block lg:hidden"
               onClick={toggleMobileMenu}
@@ -36,18 +36,18 @@ const Navbar = () => {
         </div>
         <div
           id="mobile-menu"
-          className={`mobile-menu bg-slate-50 bg-opacity-95 lg:hidden fixed top-0 left-0 w-full h-full shadow z-50 overflow-y-auto transition-transform ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}
+          className={`mobile-menu bg-slate-50 lg:hidden fixed top-0 left-0 w-full h-full shadow z-50 overflow-y-auto transition-transform ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}
         >
 
-          <div className="flex flex-col h-full mobile-menu-gradient">
+          <div className="flex flex-col h-full mobile-menu-gradient sm:px-12">
             <div className='flex flex-row w-full'>
-              <div className="w-[180px] h-[50px] py-8 pl-4">
+              <div className="w-[180px] h-[50px] py-8 px-6">
                 <Link href="/">
                   <img src="/roadMapLogo.svg" alt="logo" className="w-[60px] h-[60px] object-contain" />
                 </Link>
               </div>
-              <div className="flex justify-end w-full pt-8 pr-4">
-                <div className=' h-[60px] w-[60px] flex justify-center items-center'>
+              <div className="flex justify-end w-full py-8 px-6">
+                <div className=' flex justify-center items-center'>
                   <button
                     className="block lg:hidden"
                     onClick={toggleMobileMenu}

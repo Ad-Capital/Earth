@@ -49,7 +49,7 @@
 }
 
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 540px) {
     .title {
         font-size: 24px;
         font-weight: 600;
@@ -73,9 +73,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 540px) {
     .cards {
         padding-top: 20px;
     }
@@ -137,7 +139,7 @@
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 540px) {
     .image {
         width: 300px;
     }
@@ -154,7 +156,7 @@
     padding-top: 150px;
     padding-bottom: 100px;
 }
-@media (max-width: 431px) {
+@media (max-width: 541px) {
     .link {
         padding-top: 50px;
     }

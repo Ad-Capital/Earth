@@ -7,11 +7,19 @@
   height: 2800px;
   left: calc(50% - 1446px/2);
   background: linear-gradient(180deg, #7D2AE7 0%, rgba(250, 249, 255, 0) 100%);
+  padding-top: 64px;
+  margin: 0;
 
 }
 @media screen and (max-width: 430px) {
   .body {
       height: 2500px;
+  }
+
+}
+@media screen and (max-width: 1023px) {
+  .body {
+      padding-top: 0px;
   }
 
 }
@@ -71,7 +79,6 @@
   left: 0;
   width: 100%;
   overflow: hidden;
-  line-height: 0;
 }
 
 .curve svg {
@@ -85,13 +92,10 @@
   fill: #F3F3F3;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 540px) {
   .curve svg {
     height: 150px;
-
-    &.small-screen {
-      display: block;
-    }
+    overflow: hidden;
   }
 }
 
@@ -114,7 +118,7 @@
   fill: #F3F3F3;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 540px) {
   .contactCurve svg {
     height: 200px;
 
@@ -145,14 +149,14 @@
 .roadmapCurve svg {
   position: relative;
   width: calc(100% + 1.3px);
-  height: 600px;
+  height: 500px;
 }
 
 .roadmapCurve .shape-fill {
   fill: #ffffff;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 540px) {
   .roadmapCurve svg {
     height: 200px;
 
@@ -237,14 +241,14 @@
 
 .text-box {
   width: 600px;
-  height: 416px;
+  height: auto;
   padding: 67px, 44px, 67px, 44px;
   border: 1px solid #ddd;
   border-radius: 20px;
   background-color: #DFCAF9;
   color: #333;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   display: flex;
   flex-direction: column;
 }
@@ -270,7 +274,7 @@
   background-position: center; /* Align the top of the image with the top of the container */
   height: 100vh;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .image-background {
       background-size: auto;
   }

@@ -15,7 +15,7 @@ const Contact = () => {
             <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" className="shape-fill"></path>
           </svg>
         </div>
-        <div className='pt-24 sm:w-[640px]'>
+        <div className='pt-24 w-full sm:w-[640px]'>
           <h1 className={styles.headline}>Subscribe to Earth’s newsletter</h1>
           <p className={styles.subheader}>Stay connected with the latest updates, exclusive offers, and artistic inspiration from Earth. Subscribe to our newsletter today and join our vibrant community of art enthusiasts, collectors, and creators.</p>
           <div className={styles.flexStart}>

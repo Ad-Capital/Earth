@@ -1,8 +1,8 @@
 import styles from "./style.module.scss"
 
 const Hero = () => (
-    <section className="relative z-10">
-        <div className="bg-[#F3F3F3]"
+    <section className="">
+        <div className=""
         >
             <div className={styles.headLine}>
                 <div className={styles.header}>

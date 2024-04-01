@@ -6,9 +6,15 @@
     padding: 60px;
     width: auto;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 540px) {
     .headLine {
         width: 320px;
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .headLine {
+        width: 90%;
         padding: 0px;
     }
 }
@@ -33,7 +39,7 @@
     text-align: left;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 540px) {
     .header {
         font-size: 34px;
         font-weight: 700;
@@ -64,7 +70,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 540px) {
     .heroSubheader {
         font-size: 14px;
         font-weight: 400;

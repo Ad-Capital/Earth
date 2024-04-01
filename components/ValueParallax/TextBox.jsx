@@ -1,32 +1,30 @@
 const TextBox = ({ activeSection }) => {
   const sections = {
     Community: {
-      title: "Discover the Earth Community: A Revolution in the Art World",
+      title: "Experience Community Spirit",
       content:
-        "Our community shines a spotlight on emerging and established artists alike, ensuring their voices are heard and their creations find the perfect audience.",
+        "Experience the warmth and camaraderie of our tight-knit community. From virtual exhibitions to collaborative projects, there's always something exciting happening at Earth",
     },
     Partnerships: {
-      title: "We're Open to Partnerships & Collaborations",
+      title: "We're actively seeking collaborations and partnerships with individuals and organizations who share our passion for the arts.",
       content:
-        "To discuss partnership and discover how we can elevate the art experience together, please reach out to our team in the contact section. We look forward to collaborating with you and transforming the art world as we know it.",
+        "Whether you're an artist, gallery owner, technology provider, or industry enthusiast, we invite you to Reach out to us today to explore partnership opportunities and be part of our journey towards innovation and excellence.",
     },
     Marketplace: {
       title: "Coming soon",
       content:
-        "Our platform provides a diverse range of NFTs for purchase, enabling artists to strategically organize and market their digital collections.",
+        "Stay tuned for our upcoming launch, where you'll have access to a curated selection of artworks from talented artists around the globe.",
     },
     Events: {
-      title: "Coming soon",
+      title: "Artistry in Motion: Events & Exhibitions",
       content:
-        "Discover a world of excitement! Our upcoming events feature workshops, seminars, performances. Stay tuned for dates and tickets. Join the adventure.",
+        "Engage with upcoming exhibitions, workshops, and artist talks. Stay in the loop with all our artistic gatherings.",
     },
     Blog: {
-      title: "Coming soon",
+      title: "Art & Culture Chronicles",
       content:
-        "Insightful Blog Posts Coming Soon! Stay tuned for engaging articles, expert tips, and inspiring stories. Explore, learn, and be inspired.",
+        "Explore our latest insights, stories, and updates in the world of art and culture. Dive into thought-provoking articles, behind-the-scenes features, and much more. Stay informed and inspired by visiting our blog regularly.",
     },
-
-    // ... define content for all sections
   };
 
   const sectionData = sections[activeSection] || {}; // Handle missing sections

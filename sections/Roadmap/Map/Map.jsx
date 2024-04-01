@@ -198,7 +198,7 @@ const Roadmap = () => {
           </div>
         </div>
       </motion.div>
-      <Link href="#Roadmap" onClick={smoothScroll('#Roadmap')} className={styles.blackbuttonMobile}>
+      <Link href="#Roadmap" onClick={smoothScroll('#Roadmap')} className={styles.blackbutton}>
         <img src="blackButton.svg" alt="" className={styles.button} />
       </Link>
       <RoadmapMobile />

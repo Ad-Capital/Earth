@@ -18,10 +18,9 @@
     height: auto;
     background: #F3F3F3;
     border-radius: 600px 600px 10px 10px;
-
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 540px) {
     .aboutLayout {
         height: auto;
     }
@@ -62,6 +61,11 @@
 @media screen and (max-width: 430px) {
     .aboutText {
         display: none;
+    }
+}
+@media screen and (max-width: 541px) {
+    .aboutText {
+        width: 90%;
     }
 }
 @media screen and (max-width: 430px) {

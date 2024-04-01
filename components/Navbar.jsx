@@ -1,9 +1,8 @@
 'use client';
 
-import { IoMdMenu, IoMdClose } from 'react-icons/io';
 import Rounded from "@/constants/RoundedButtons"
-import { useState } from 'react';
-import { useRouter } from 'next/router';
+import { IoMdMenu, IoMdClose } from 'react-icons/io';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const smoothScroll = (href) => (e) => {
@@ -20,21 +19,48 @@ const smoothScroll = (href) => (e) => {
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="py-8 sm:px-14 px-4 relative bg-[#F3F3F3]">
+    <nav className={`mb-0 py-8 sm:px-14 px-6 bg-[#F3F3F3] md:top-0 w-full z-50 lg:fixed ${isScrolled ? 'shadow-md' : ''}`}>
       <div className={`mx-auto flex justify-between items-center gap-8`}>
         <div className="w-[180px] h-[50px]">
           <Link href="/">
             <img src="/logo.svg" alt="logo" className="w-[60px] h-[60px] object-contain" />
           </Link>
         </div>
+        <div className="hidden lg:flex gap-8">
+          <NavLink href="#about">About</NavLink>
+          <Link href="/roadmap" className="font-bold nav">Roadmap</Link>
+          <NavLink href="#FAQ">FAQs</NavLink>
+          <NavLink href="#market">Marketplace</NavLink>
+          <Link href="/" className="font-bold nav">Store</Link>
+        </div>
+        <div className="hidden lg:flex">
+          <Rounded><p className='text-white font-bold'>Join Community</p></Rounded>
+        </div>
         <div className="lg:hidden flex justify-end items-center">
-          <div className='h-[60px] w-[60px] flex justify-center items-center'>
+          <div className='flex justify-center items-center'>
             <button
               className="block lg:hidden"
               onClick={toggleMobileMenu}
@@ -49,18 +75,17 @@ const Navbar = () => {
         </div>
         <div
           id="mobile-menu"
-          className={`mobile-menu bg-slate-50 bg-opacity-95 lg:hidden fixed top-0 left-0 w-full h-full shadow z-50 overflow-y-auto transition-transform ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}
+          className={`mobile-menu  bg-slate-50 lg:hidden fixed top-0 left-0 w-full h-full shadow z-50 overflow-y-auto transition-transform ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}
         >
-
-          <div className="flex flex-col h-full mobile-menu-gradient">
+          <div className="flex flex-col h-full mobile-menu-gradient sm:px-12">
             <div className='flex flex-row w-full'>
-              <div className="w-[180px] h-[50px] py-8 pl-4">
+              <div className="w-[180px] h-[50px] py-8 px-6">
                 <Link href="/">
                   <img src="/roadMapLogo.svg" alt="logo" className="w-[60px] h-[60px] object-contain" />
                 </Link>
               </div>
-              <div className="flex justify-end w-full pt-8 pr-4">
-                <div className='h-[60px] w-[60px] flex justify-center items-center'>
+              <div className="flex justify-end w-full py-8 px-8">
+                <div className='flex justify-center items-center'>
                   <button
                     className="block lg:hidden"
                     onClick={toggleMobileMenu}
@@ -74,7 +99,6 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-
             <div className="flex flex-col gap-4 pt-[50px] text-white">
               <MobileNavItem href="#about" onClick={toggleMobileMenu}>
                 About
@@ -94,17 +118,6 @@ const Navbar = () => {
               <div className='p-4'><Rounded><p className='font-bold'>Join the discord community</p></Rounded></div>
             </div>
           </div>
-        </div>
-        {/* Desktop navigation */}
-        <div className="hidden lg:flex gap-8">
-          <NavLink href="#about">About</NavLink>
-          <Link href="/roadmap" className="font-bold nav">Roadmap</Link>
-          <NavLink href="#FAQ">FAQs</NavLink>
-          <NavLink href="#market">Marketplace</NavLink>
-          <Link href="/" className="font-bold nav">Store</Link>
-        </div>
-        <div className="hidden lg:flex">
-          <Rounded><p className='text-white font-bold'>Join Community</p></Rounded>
         </div>
       </div>
     </nav>

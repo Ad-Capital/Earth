@@ -6,14 +6,14 @@ import styled from 'styled-components';
 const StyledElement = styled.div`
   display: block;
 
-  @media (max-width: 430px) {
+  @media (max-width: 540px) {
     display: none;
   }
 `;
 const StyledElement2 = styled.div`
   display: block;
 
-  @media (min-width: 431px) {
+  @media (min-width: 541px) {
     display: none;
   }
 `;
@@ -30,8 +30,8 @@ const heroCards = () => (
         <Slider />
       </StyledElement>
     </StyledElement>
-    <StyledElement2 className="relative z-10 py-4">
-      <img src="Group.svg" alt="" />
+    <StyledElement2 className="overflow-hidden z-10 py-4 w-full">
+      <img src="Group.svg" alt="" className='w-full'/>
     </StyledElement2>
   </section>
 );
