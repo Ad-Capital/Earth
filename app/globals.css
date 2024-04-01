@@ -92,7 +92,7 @@
   fill: #F3F3F3;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 640px) {
   .curve svg {
     height: 150px;
     overflow: hidden;
@@ -118,7 +118,7 @@
   fill: #F3F3F3;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 640px) {
   .contactCurve svg {
     height: 200px;
 
@@ -156,7 +156,7 @@
   fill: #ffffff;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 640px) {
   .roadmapCurve svg {
     height: 200px;
 

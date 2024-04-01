@@ -20,7 +20,7 @@
     border-radius: 600px 600px 10px 10px;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 640px) {
     .aboutLayout {
         height: auto;
     }
@@ -63,7 +63,7 @@
         display: none;
     }
 }
-@media screen and (max-width: 541px) {
+@media screen and (max-width: 641px) {
     .aboutText {
         width: 90%;
     }

@@ -6,14 +6,14 @@ import styled from 'styled-components';
 const StyledElement = styled.div`
   display: block;
 
-  @media (max-width: 540px) {
+  @media (max-width: 640px) {
     display: none;
   }
 `;
 const StyledElement2 = styled.div`
   display: block;
 
-  @media (min-width: 541px) {
+  @media (min-width: 641px) {
     display: none;
   }
 `;
