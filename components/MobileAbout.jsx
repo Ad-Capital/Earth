@@ -1,8 +1,6 @@
 import React from 'react';
 import { ReadMore } from '.';
 import styles from '../sections/About/style.module.scss';
-import Link from 'next/link';
-import Rounded from "@/constants/RoundedButtons"
 
 
 const About = () => {

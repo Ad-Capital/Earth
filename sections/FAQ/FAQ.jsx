@@ -44,7 +44,7 @@ const FAQ = () => {
   return (
     <>
       <section id="FAQ" className={styles.FAQ}>
-        <h2 className={styles.headline}>FAQ</h2>
+        <h2 className={styles.headline}>FAQs</h2>
         {
           TriviaQuestion.map((trivia, index) => (
             <div key={trivia.question} className={styles.question}>

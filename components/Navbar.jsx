@@ -42,7 +42,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`mb-0 py-8 sm:px-14 px-6 bg-[#F3F3F3] md:top-0 w-full z-50 lg:fixed ${isScrolled ? 'shadow-md' : ''}`}>
+    <nav className={`mb-0 py-8 sm:px-14 px-6 bg-[#F3F3F3] md:top-0 w-full z-50 fixed ${isScrolled ? 'shadow-md' : ''}`}>
       <div className={`mx-auto flex justify-between items-center gap-8`}>
         <div className="w-[180px] h-[50px]">
           <Link href="/">
@@ -78,13 +78,13 @@ const Navbar = () => {
           className={`mobile-menu  bg-slate-50 lg:hidden fixed top-0 left-0 w-full h-full shadow z-50 overflow-y-auto transition-transform ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}
         >
           <div className="flex flex-col h-full mobile-menu-gradient sm:px-12">
-            <div className='flex flex-row w-full'>
-              <div className="w-[180px] h-[50px] py-8 px-6">
+            <div className='flex flex-row w-full px-6 py-8'>
+              <div className="w-[180px] h-[50px]">
                 <Link href="/">
                   <img src="/roadMapLogo.svg" alt="logo" className="w-[60px] h-[60px] object-contain" />
                 </Link>
               </div>
-              <div className="flex justify-end w-full py-8 px-8">
+              <div className="flex justify-end w-full">
                 <div className='flex justify-center items-center'>
                   <button
                     className="block lg:hidden"
@@ -103,7 +103,7 @@ const Navbar = () => {
               <MobileNavItem href="#about" onClick={toggleMobileMenu}>
                 About
               </MobileNavItem>
-              <Link href="/roadmap" className="block pb-5 pl-10 border-b border-gray-300 font-bold w-full nav" onClick={toggleMobileMenu}>
+              <Link href="/roadmap" className="block pb-5 pl-10 font-bold w-full" onClick={toggleMobileMenu}>
                 Roadmap
               </Link>
               <MobileNavItem href="#FAQ" onClick={toggleMobileMenu}>
@@ -112,7 +112,7 @@ const Navbar = () => {
               <MobileNavItem href="#market" onClick={toggleMobileMenu}>
                 Marketplace (Coming soon)
               </MobileNavItem>
-              <Link href="/About" className="block pb-5 pl-10 border-b border-gray-300 font-bold w-full nav" onClick={toggleMobileMenu}>
+              <Link href="/About" className="block pb-5 pl-10 font-bold w-full" onClick={toggleMobileMenu}>
                 Go to Store
               </Link>
               <div className='p-4'><Rounded><p className='font-bold'>Join the discord community</p></Rounded></div>
@@ -125,7 +125,7 @@ const Navbar = () => {
 };
 
 const MobileNavItem = ({ href, children, onClick }) => (
-  <a href={href} className="block pb-5 pl-10 border-b border-gray-300 font-bold w-full nav" onClick={(e) => {smoothScroll(href)(e); if(onClick) onClick();}}>
+  <a href={href} className="block pb-5 pl-10 font-bold w-full " onClick={(e) => {smoothScroll(href)(e); if(onClick) onClick();}}>
     {children}
   </a>
 );

@@ -40,13 +40,13 @@ const Navbar = () => {
         >
 
           <div className="flex flex-col h-full mobile-menu-gradient sm:px-12">
-            <div className='flex flex-row w-full'>
-              <div className="w-[180px] h-[50px] py-8 px-6">
+            <div className='flex flex-row w-full px-6 py-8'>
+              <div className="w-[180px] h-[50px]">
                 <Link href="/">
                   <img src="/roadMapLogo.svg" alt="logo" className="w-[60px] h-[60px] object-contain" />
                 </Link>
               </div>
-              <div className="flex justify-end w-full py-8 px-6">
+              <div className="flex justify-end w-full">
                 <div className=' flex justify-center items-center'>
                   <button
                     className="block lg:hidden"
@@ -100,7 +100,7 @@ const Navbar = () => {
 
 const MobileNavItem = ({ href, children, onClick }) => (
   <Link href={href}>
-    <div className="block pb-5 pl-10 border-b border-gray-300 font-bold w-full nav" onClick={onClick}>
+    <div className="block pb-5 pl-10 font-bold w-full nav" onClick={onClick}>
       {children}
     </div>
   </Link>

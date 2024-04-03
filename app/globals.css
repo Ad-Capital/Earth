@@ -261,8 +261,8 @@
   border-radius: 20px;
   background-color: #DFCAF9;
   color: #333;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: start;
   display: flex;
   flex-direction: column;
 }
