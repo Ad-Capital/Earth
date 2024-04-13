@@ -42,7 +42,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`mb-0 py-8 sm:px-14 px-6 bg-[#F3F3F3] md:top-0 w-full z-50 fixed ${isScrolled ? 'shadow-md' : ''}`}>
+    <nav className={`mb-0 py-8 sm:px-14 px-6 bg-[#F3F3F3] top-0 w-full z-50 fixed ${isScrolled ? 'shadow-md' : ''}`}>
       <div className={`mx-auto flex justify-between items-center gap-8`}>
         <div className="w-[180px] h-[50px]">
           <Link href="/">
